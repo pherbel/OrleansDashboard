@@ -36,7 +36,7 @@ namespace OrleansDashboard
             config.RegisterStatisticsProvider<StatsPublisher>("DashboardStats");
         }
 
-        internal static string ToSiloAddress(this IProviderRuntime providerRuntime)
+        public static string ToSiloAddress(this IProviderRuntime providerRuntime)
         {
             var parts = providerRuntime.SiloIdentity.Substring(1).Split(':');
             return $"{parts[0]}:{parts[1]}@{parts[2]}";

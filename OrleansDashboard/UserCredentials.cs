@@ -1,6 +1,6 @@
 ﻿namespace OrleansDashboard
 {
-    internal class UserCredentials
+    public class UserCredentials
     {
         public UserCredentials(string username, string password)
         {

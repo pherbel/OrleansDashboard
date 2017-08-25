@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OrleansDashboard
 {
-    internal class BasicAuthMiddleware
+    public class BasicAuthMiddleware
     {
         private readonly RequestDelegate next;
         private readonly UserCredentials userCredentials;
